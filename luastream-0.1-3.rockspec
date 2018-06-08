@@ -1,14 +1,25 @@
-package = "luastream"
-version = "0.1-2"
+-- This file was automatically generated for the LuaDist project.
 
+package = "luastream"
+version = "0.1-3"
+
+-- LuaDist source
 source = {
-	url = "git://github.com/armanneysi89/luastream.git",
+  tag = "0.1-3",
+  url = "git://github.com/LuaDist-testing/luastream.git"
 }
+-- Original source
+-- source = {
+-- 	url = "git://github.com/armanneysi89/luastream.git",
+-- }
 description = {
 	summary = "HBM streamingclient for lua",
 	homepage = "http://github.com/armanneysi89/luastream.git",
 	license = "MIT/X11",
-	detailed = ""
+	detailed = [[
+		Synchronous streaming client for lua.
+		https://github.com/HBM/streaming-spec/blob/master/streaming.md	
+	]]
 }
 
 dependencies = {
