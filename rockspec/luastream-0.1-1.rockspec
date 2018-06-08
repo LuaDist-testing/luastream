@@ -1,9 +1,8 @@
 package = "luastream"
-version = "@VERSION@-1"
+version = "0.1-2"
 
 source = {
 	url = "git://github.com/armanneysi89/luastream.git",
-	tag="@VERSION@"
 }
 description = {
 	summary = "HBM streamingclient for lua",
@@ -13,9 +12,18 @@ description = {
 }
 
 dependencies = {
-	"lua >= 5.1",
+	"lua = 5.1",
 	"luasocket",
 	"inspect",
 	"lanes",
 	"lua-cjson",
+}
+build = {
+	type = "builtin",
+	modules = {
+		streaming = "streaming.lua",
+		streaming_message="streaming_message.lua",
+		bit = "bit.lua",
+		log = "log.lua"
+	}
 }
